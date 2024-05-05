@@ -5,26 +5,6 @@
 #include "abc.h"
 
 
-//class BaseReader : public ABCReader {
-//protected:
-//    std::ifstream m_in;
-//    std::string m_filename;
-//public:
-//    explicit BaseReader(const std::string& filename) : m_filename(filename) {}
-//
-//    virtual bool Open() {
-//        m_in.open(m_filename);
-//        if (!m_in.is_open())
-//            return false;
-//        return true;
-//    }
-//
-//    virtual void Close() {
-//        m_in.close();
-//    }
-//};
-
-
 class BaseInt8FileReader : public ABCUInt8Reader {
 protected:
     std::ifstream m_in;
